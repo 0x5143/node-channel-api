@@ -1,0 +1,26 @@
+{
+  "name": "illustration",
+  "version": "0.0.1",
+  "description": "移动游戏的渠道接入工具集",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huangqingcheng/node-channel-api.git"
+  },
+  "keywords": [
+    "channel"
+  ],
+  "author": "Neil Wong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huangqingcheng/node-channel-api/issues"
+  },
+  "homepage": "https://github.com/huangqingcheng/node-channel-api",
+  "dependencies": {
+    "ursa": "latest",
+    "request": "latest"
+  }
+}
