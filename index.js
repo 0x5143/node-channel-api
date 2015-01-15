@@ -8,6 +8,7 @@ var EventEmitter = require('events').EventEmitter;
 var ErrorCode = require('./libs/error');
 
 var BD91Channel = require('./libs/bd91');
+var QihooChannel = require('./libs/360.class');
 
 function ChannelManager(conf) {
     EventEmitter.call(this);
@@ -17,9 +18,14 @@ function ChannelManager(conf) {
     for (var i = 0; i < conf.length; i++) {
         var c = conf[i];
         switch (c.channel) {
-            case '000007': //百度91渠道
+            case '000007': //百度91
             {
                 this.channels[c.channel] = new BD91Channel(c);
+                break;
+            }
+            case '000023': //360手机助手
+            {
+                this.channels[c.channel] = new QihooChannel(c);
                 break;
             }
             default:

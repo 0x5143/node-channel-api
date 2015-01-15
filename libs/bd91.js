@@ -117,6 +117,7 @@ BD91Channel.prototype.doReceiptCheck = function(receipt, callback) {
     if (params.PayStatus == 1) {
         isValid = true;
         order = {
+            'channel': '000007',
             'sid': parseInt(params.Note, 10),
             'streamid': params.ConsumeStreamId,
             'orderid': params.CooOrderSerial,

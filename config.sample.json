@@ -1,8 +1,15 @@
 [
     {
-        "name": "百度91渠道",
+        "name": "百度91",
         "channel": "000007",
         "appid": "xxxxxx",
+        "secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+        "name": "360手机助手",
+        "channel": "000023",
+        "appid": "xxxxxx",
+        "appkey": "xxxxxxxxxxxx",
         "secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     }
 ]
